@@ -9,8 +9,8 @@ const Navbar = () => {
     };
 
     return (
-        <nav className="flex items-center justify-between text-lg py-4 px-8   border-gray-400 bg-white shadow-md sticky top-0 z-50">
-            <div className="text-2xl font-bold text-primary cursor-pointer"
+        <nav className="flex items-center justify-between text-lg py-4 px-4   border-gray-400 bg-white shadow-md sticky top-0 z-50">
+            <div className=" text-xl sm:text-2xl font-bold text-primary cursor-pointer"
                 onClick={() => scrollTo(0, 0)}>
                 Portfolio
             </div>

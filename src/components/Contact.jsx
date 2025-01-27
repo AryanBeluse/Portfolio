@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <section
             id="contact"
-            className="py-16 bg-gray-100 flex flex-col items-center text-center px-4
+            className="py-16 mt-4 bg-gray-100 flex flex-col items-center text-center px-4
                         border-b border-t border-gray-400"
         >
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Get in Touch</h2>
@@ -13,7 +13,7 @@ const Contact = () => {
             </p>
             <form
                 className="w-full max-w-lg bg-white p-6 rounded-2xl shadow-lg"
-                action="https://formsubmit.co/aryan.beluse@gmail.com" // Replace with your email or action URL
+                action="https://formsubmit.co/aryan.beluse@gmail.com"
                 method="POST"
             >
                 <div className="mb-4">
