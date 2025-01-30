@@ -1,11 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+    const [activeSection, setActiveSection] = useState("");
+
     const scrollToSection = (id) => {
         const section = document.getElementById(id);
         if (section) {
             section.scrollIntoView({ behavior: 'smooth' });
         }
+        setActiveSection(id);
     };
 
     return (
@@ -17,19 +20,19 @@ const Navbar = () => {
             <ul className="flex items-center gap-8 font-medium">
                 <li
                     onClick={() => scrollToSection('skills')}
-                    className="py-1 hover:text-gray-600 cursor-pointer focus:text-primary focus:outline-none"
+                    className={`${activeSection === 'skills' ? 'underline decoration-primary text-primary decoration-2' : ''} py-1 hover:text-gray-600 cursor-pointer focus:text-primary focus:outline-none`}
                 >
                     Skills
                 </li>
                 <li
                     onClick={() => scrollToSection('project')}
-                    className="py-1 hover:text-gray-600 cursor-pointer focus:text-primary focus:outline-none"
+                    className={`${activeSection === 'project' ? 'underline decoration-primary decoration-2 text-primary' : ''} py-1 hover:text-gray-600 cursor-pointer focus:text-primary focus:outline-none`}
                 >
                     Projects
                 </li>
                 <li
                     onClick={() => scrollToSection('contact')}
-                    className="py-1 hover:text-gray-600 cursor-pointer focus:text-primary focus:outline-none"
+                    className={`${activeSection === 'contact' ? 'underline decoration-primary text-primary decoration-2' : ''} py-1 hover:text-gray-600 cursor-pointer focus:text-primary focus:outline-none`}
                 >
                     Contact
                 </li>

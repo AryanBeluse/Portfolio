@@ -26,7 +26,7 @@ const Intro = () => {
 
                 <div className="mt-6">
                     <a
-                        href="Aryan_Resume.pdf"
+                        href="/Aryan_Resume.pdf"
                         download
                         className="inline-block px-6 py-3 text-white bg-primary rounded-lg shadow-md hover:bg-primary-dark transition duration-200"
                     >
